@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap');
+::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #75aadb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Dongle', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 500vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#beginPage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#beginPage video {
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+#beginPage #titlePage {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    text-shadow: 1px 1px 9px black;
+    pointer-events: none;
+}
+
+#beginPage #titlePage span {
+    color: #75aadb;
+    margin-left: 14px;
+}
+
+#beginPage #subtitlePage {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    pointer-events: none;
+    margin-top: 50vh;
+    font-size: 3rem;
+    transform: translateY(50%);
+}
+
+#beginPage #containerInsideVideo {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#beginPage #containerInsideVideo .bannersInsideContainerVideo {
+    position: relative;
+    display: flex;
+    width: calc(100%/3);
+    height: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    backdrop-filter: blur(5px);
+    flex-wrap: wrap;
+}
+
+#beginPage #containerInsideVideo .bannersInsideContainerVideo .bannerVideoPart1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 4rem;
+}
+
+#beginPage #containerInsideVideo .bannersInsideContainerVideo .bannerVideoPart2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#beginPage #containerInsideVideo .bannersInsideContainerVideo .bannerVideoPart2 p {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.DefaultSecPage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    margin-top: -1px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 20px 20px -2px grey;
+    overflow: hidden;
+}
+
+.DSP1 {
+    background-image: url(https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2019/09/post-parceiro-intercc3a2mbio-na-argentina-conhec3a7a-opc3a7c3b5es-acessc3adveis-e-de-qualidade.jpg);
+}
+
+.DSP2 {
+    background-image: url(https://imagens.brasil.elpais.com/resizer/1s6uPVnr723_1MTnlwQwxDARwGI=/1200x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/RXGLTD4VGP72CWM2NUMJN5SHI4.jpg);
+}
+
+.DSP3 {
+    background-image: url(https://www.remessaonline.com.br/blog/wp-content/uploads/2021/01/peso-argentino.jpg.optimal.jpg);
+}
+
+.DSP4 {
+    background-image: url(https://lh5.googleusercontent.com/p/AF1QipOdE7Joq-d4Z0m_wvB3vML9c9vmy1Mam6bK-9Fu=w1080-k-no);
+}
+
+.DefaultSecPage .insideDefaultSecPage {
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.DefaultSecPage .insideDefaultSecPage:nth-child(2) {
+    padding: 20px 0px;
+}
+
+.DefaultSecPage .insideDefaultSecPage img {
+    margin-top: auto;
+    filter: drop-shadow(2px 4px 10px black);
+}
+
+.DefaultSecPage .insideDefaultSecPage #imgBannerContent02 {
+    height: 100%;
+    margin-bottom: -20px;
+}
+
+.DefaultSecPage .insideDefaultSecPage #containerOrg {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    padding: 10px 20px;
+    background-color: #75AADB;
+    box-shadow: 0 0 30px rgb(0 0 0 / 18%);
+}
+
+.DefaultSecPage .insideDefaultSecPage .coT1 {
+    border-radius: 5px 0 0 5px;
+}
+
+.DefaultSecPage .insideDefaultSecPage .coT2 {
+    border-radius: 0 5px 5px 0;
+}
+
+.DefaultSecPage .insideDefaultSecPage #containerOrg h2 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: min-content;
+    font-weight: 600;
+    font-size: 34px;
+    font-family: Segoe UI Regular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 0 2px;
+    line-height: 40px;
+    color: #fff;
+    pointer-events: none;
+}
+
+.DefaultSecPage .insideDefaultSecPage #containerOrg p {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: min-content;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: Segoe UI Regular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 24px 0 0;
+    color: #e8ffff;
+    pointer-events: none;
+}
+
+.DefaultSecPage .insideDefaultSecPage #containerOrg div {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    font-family: Segoe UI Regular, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: 600;
+    margin-top: 23px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.DefaultSecPage .insideDefaultSecPage #containerOrg div:hover {
+    opacity: .6;
+}
+
+.containerBannersContent {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    min-height: 50vh;
+    justify-content: space-around;
+    align-content: baseline;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.containerBannersContent .bannerContent {
+    position: relative;
+    display: flex;
+    width: calc(100%/3.5);
+    height: auto;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 18%);
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+
+.containerBannersContent .bannerContent i {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    font-size: 4rem;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+
+.containerBannersContent .bannerContent h5 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.containerBannersContent .bannerContent p {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 20px 10px 20px;
+    line-height: 30px;
+}
+
+.containerScrollImg {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center
+}
+
+.containerScrollImg h1 {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin: auto;
+    font-size: 5rem;
+    text-shadow: 1px 1px 9px black;
+    text-align: center;
+}
+
+.csi1 {
+    background-image: url(https://cdn.getyourguide.com/img/country/58de13843d809.jpeg/88.jpg);
+}
+
+.csi2 {
+    background-image: url("https://s.rfi.fr/media/display/0a980b64-12f4-11ea-a9ec-005056a99247/2014-06-25T183748Z_1170198050_TB3EA6P1IDOB6_RTRMADP_3_SOCCER-WORLD-M43-NGA-ARG(1).JPG");
+}
+
+.csi3 {
+    background-image: url(https://wise.com/imaginary/comprar-peso-argentino.jpg);
+}
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(117, 170, 219, 0), rgba(117, 170, 219, 1));
+    justify-content: center;
+    align-items: self-end;
+    flex-wrap: wrap;
+}
+
+footer #navFooter {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 100px 0 0 0;
+}
+
+footer #navFooter ul {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    list-style: none;
+    flex-direction: column;
+    max-width: calc(100%/3.2);
+}
+
+footer #navFooter ul li {
+    color: #f0f9ff;
+    font-size: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer #navFooter ul li:nth-child(1) {
+    font-size: 2.3rem !important;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+footer #navFooter ul li:not(#textContentFooter):hover {
+    opacity: 1;
+}
+
+#textContentFooter {
+    pointer-events: none;
+}
+
+#socialFooter {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    max-width: 240px;
+    justify-content: center;
+}
+
+#socialFooter div {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#socialFooter div:nth-child(1) i {
+    font-size: 1.2rem;
+}
+
+#socialFooter div:nth-child(2) i {
+    font-size: 1.5rem;
+}
+
+#socialFooter div:nth-child(3) i {
+    font-size: 1.2rem;
+}
+
+#socialFooter div:nth-child(4) i {
+    font-size: 1.2rem;
+}
+
+#socialFooter div:hover {
+    opacity: 0.5;
+}
+
+#socialFooter p {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    color: white;
+    font-size: 1.3rem;
+    opacity: .6;
+    margin: 10px 0;
+    pointer-events: none;
+}
+
+.bcEx {
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+.bcEx img {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s;
+    filter: blur(10px);
+}
+
+.bcEx:hover img {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.bcExText {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: fit-content !important;
+}
+
+.bcExText h1 {
+    position: relative;
+    display: flex;
+    color: rgb(27, 20, 20);
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    height: min-content;
+}
+
+.bcExText p {
+    position: relative;
+    display: flex;
+    color: rgb(27, 20, 20);
+    font-size: 1.5rem;
+    padding: 0 10px;
+    height: min-content;
+    line-height: 20px;
+    flex-wrap: wrap;
+    text-align: left !important;
+    font-size: 1.7rem !important;
+}
+
+.bcExText p span {
+    position: relative;
+    display: flex;
+    margin: 10px auto;
+}
+
+.bcExText p span a {
+    position: relative;
+    display: flex;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.bcExText p span a:nth-child(1) {
+    color: #C13584;
+}
+
+.bcExText p span a:nth-child(2) {
+    color: #0e76a8;
+}
+
+.bcExText p span a:nth-child(1):hover {
+    text-shadow: 1px 1px 20px #C13584;
+}
+
+.bcExText p span a:nth-child(2):hover {
+    text-shadow: 1px 1px 20px #0e76a8;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: transparent;
+    margin: 0 0 10px 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.carousel .card {
+    color: #fff;
+    text-align: center;
+    height: 260.5px;
+    width: 100%;
+    margin: 30px 0 0 0;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 18%);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.carousel .card img {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: inherit !important;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 50%;
+    border: 2px solid #fbe8e6!important;
+    background-color: #fbe8e6;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #fbe8e6!important;
+    background-color: #fbe8e6;
+    height: 20px;
+    width: 20px;
+}
+
+.owl-item {
+    margin-right: 86px !important;
+}
+
+#downloadButton {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    pointer-events: visible;
+    text-transform: uppercase;
+    font-weight: 900;
+}
